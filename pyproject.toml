@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "people-spawner"
+version = "0.1.0"
+description = ""
+authors = ["Mateusz-Fikus <matifikus1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "people_spawner"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.4"
+djangorestframework = "^3.14.0"
+psycopg2 = "^2.9.5"
+psycopg2-binary = "^2.9.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
